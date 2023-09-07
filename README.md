@@ -67,9 +67,12 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 
 ## Install
 
-Setup your .env file
+Setup your .env file first
+
+Then
 
 You can install the app by running the following commands:
 
 - composer install
 - php artisan migrate
+- php artisan serve
