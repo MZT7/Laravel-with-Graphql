@@ -1,0 +1,14 @@
+input LoginInput {
+    email: String! @rules(apply: ["required", "email", "string"])
+    password: String! @rules(apply: ["required", "string"])
+}
+
+type AuthPayload {
+    user: User!
+    accessToken: String!
+}
+
+extend type Mutation {
+    login(input: LoginInput! @spread): AuthPayload
+    logout: String @guard
+}

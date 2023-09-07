@@ -1,0 +1,5 @@
+type Query
+
+#import user.graphql
+#import auth.graphql
+#import task.graphql
